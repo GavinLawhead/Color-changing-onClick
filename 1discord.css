@@ -1,12 +1,13 @@
+
 .container{
-    background-color: aqua;
+    /* background-color: aqua; */
     line-height: 100px;
-    width: 125px;
+    width: 700px;
     border: 2px solid;
     border-color: rgb(3, 3, 3);
-    display:flex;
+    display:flex-box;
     position:relative;
-
+    
 }
 
 .slidecontainer1 {

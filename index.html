@@ -9,13 +9,16 @@
         <link rel="stylesheet" href="5youtube.css">
     </head>
     <body>
-<div class="container">
-    this is a div block
+<div class="container" id="container">
+    ICON
+    <label>red:</label>
+    <input type="range" id="rangeRed" value="0" min="0" max="255" />
+    <label>green:</label>
+    <input type="range" id="rangeGreen" value="0" min="0" max="255" />
+    <label>blue:</label>
+    <input type="range" id="rangeBlue" value="0" min="0" max="255" />
 </div>
-<div class="slidecontainer1">
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-</div>
-<div class="container2">
+<!-- <div class="container2">
     this is a div block
 </div>
 <div class="slidecontainer2">
@@ -39,5 +42,26 @@
 <div class="slidecontainer5">
     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
   </div>
+   -->
+  <script>
+    function changeColor() {
+      let red = document.getElementById("rangeRed").value;
+      let green = document.getElementById("rangeGreen").value;
+      let blue = document.getElementById("rangeBlue").value;
+      let color = "rgb(" + red + "," + green + "," + blue + ")";
+      document.body.style.backgroundColor = color;
+      document.getElementById("container") = ": " + color;
+    }
+
+    document
+      .getElementById("rangeRed")
+      .addEventListener("input", changeColor);
+    document
+      .getElementById("rangeGreen")
+      .addEventListener("input", changeColor);
+    document
+      .getElementById("rangeBlue")
+      .addEventListener("input", changeColor);
+  </script>
     </body>
 </htmnl>
