@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="5youtube.css">
     </head>
     <body>
-<div class="container" id="container">
+<div class="discorddiv" id="colordiv">
     ICON
     <label>red:</label>
     <input type="range" id="rangeRed" value="0" min="0" max="255" />
@@ -49,8 +49,9 @@
       let green = document.getElementById("rangeGreen").value;
       let blue = document.getElementById("rangeBlue").value;
       let color = "rgb(" + red + "," + green + "," + blue + ")";
+    //   document.getElementById("colordiv").backgroundColor =": " + color;
       document.body.style.backgroundColor = color;
-      document.getElementById("container") = ": " + color;
+      document.getElementById("colordiv") = ": " + color;
     }
 
     document
