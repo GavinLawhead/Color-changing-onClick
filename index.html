@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <title>color changing</title>
-    <head>  
+  <head>  
+      <title>color changing</title>
         <link rel="stylesheet" href="1discord.css">
-        <link rel="stylesheet" href="2facebook.css">
+        <!-- <link rel="stylesheet" href="2facebook.css">
         <link rel="stylesheet" href="3instagram.css">
         <link rel="stylesheet" href="4twitter.css">
-        <link rel="stylesheet" href="5youtube.css">
+        <link rel="stylesheet" href="5youtube.css"> -->
     </head>
     <body>
 <div class="discorddiv" id="colordiv">
@@ -50,7 +50,8 @@
       let blue = document.getElementById("rangeBlue").value;
       let color = "rgb(" + red + "," + green + "," + blue + ")";
     //   document.getElementById("colordiv").backgroundColor =": " + color;
-      document.body.style.backgroundColor = color;
+      // document.body.style.backgroundColor = color;
+      document.getElementById('colordiv').style.backgroundColor = color
       document.getElementById("colordiv") = ": " + color;
     }
 
