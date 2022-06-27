@@ -2,47 +2,34 @@
 <html>
   <head>  
       <title>color changing</title>
-        <link rel="stylesheet" href="1discord.css">
+      <script src="https://kit.fontawesome.com/85cdf326f2.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="1discord.css">
+      <link rel="stylesheet" href="2twitter.css">
         <!-- <link rel="stylesheet" href="2facebook.css">
         <link rel="stylesheet" href="3instagram.css">
-        <link rel="stylesheet" href="4twitter.css">
         <link rel="stylesheet" href="5youtube.css"> -->
-    </head>
+      </head>
     <body>
-<div class="discorddiv" id="colordiv">
-    ICON
+<div>
+    <i class="fa-brands fa-discord fa-2x " id="colordiv"></i>    
     <label>red:</label>
     <input type="range" id="rangeRed" value="0" min="0" max="255" />
-    <label>green:</label>
+    <label>green:</label>s
     <input type="range" id="rangeGreen" value="0" min="0" max="255" />
     <label>blue:</label>
     <input type="range" id="rangeBlue" value="0" min="0" max="255" />
 </div>
-<!-- <div class="container2">
-    this is a div block
+<div>
+  <i class="fa-brands fa-twitter fa-2x" id="twitter"></i>
+    <label>red:</label>
+  <input type="range" id="rangeRed" value="0" min="0" max="255" />
+  <label>green:</label>s
+  <input type="range" id="rangeGreen" value="0" min="0" max="255" />
+  <label>blue:</label>
+  <input type="range" id="rangeBlue" value="0" min="0" max="255" />
 </div>
-<div class="slidecontainer2">
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-  </div>
-<div class="container3">
-    this is a div block
-</div>
-<div class="slidecontainer3">
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-  </div>
-<div class="container4">
-    this is a div block
-</div>
-<div class="slidecontainer4">
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-  </div>
-<div class="container5">
-    this is a div block
-</div>
-<div class="slidecontainer5">
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-  </div>
-   -->
+
+
   <script>
     function changeColor() {
       let red = document.getElementById("rangeRed").value;
@@ -64,6 +51,27 @@
     document
       .getElementById("rangeBlue")
       .addEventListener("input", changeColor);
+
+      function changeColor2() {
+      let red = document.getElementById("rangeRed").value;
+      let green = document.getElementById("rangeGreen").value;
+      let blue = document.getElementById("rangeBlue").value;
+      let color = "rgb(" + red + "," + green + "," + blue + ")";
+    //   document.getElementById("colordiv").backgroundColor =": " + color;
+      // document.body.style.backgroundColor = color;
+      document.getElementById('twitter').style.backgroundColor = color
+      document.getElementById("twitter") = ": " + color;
+    }
+
+    document
+      .getElementById("rangeRed")
+      .addEventListener("input", changeColor2);
+    document
+      .getElementById("rangeGreen")
+      .addEventListener("input", changeColor2);
+    document
+      .getElementById("rangeBlue")
+      .addEventListener("input", changeColor2);
   </script>
     </body>
 </htmnl>
